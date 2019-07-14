@@ -1,0 +1,90 @@
+.logo{
+  background-color: saddlebrown;
+  }
+
+
+.btn-primary{
+    background-color: saddlebrown;
+    color: white;
+}
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  opacity: 1;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.show>.btn-primary.dropdown-toggle,
+.show>.btn-primary.dropdown-toggle:focus,
+.show>.btn-primary.dropdown-toggle:hover {
+  background-color: rgb(76, 0, 255) !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+  .btn-primary.btn-simple:hover,
+  .btn-primary.btn-simple:focus,
+  .btn-primary.btn-simple:active {
+    background-color:  rgb(25, 0, 253);
+    color: rgb(25, 0, 253);
+    border-color: rgb(25, 0, 253);
+    box-shadow: none;
+  }
+  
+  .btn-primary.btn-link {
+    color: rgb(25, 0, 253);
+  }
+  
+  #logout{
+      text-align: left;
+  }
+  .btn-logout{
+    width: 60%;
+
+  }
+  .insertHouse{
+      width: 20%;
+      display: inline-block;
+      
+      
+  }
+ .typeRadio{
+     float: right;
+ }
+
+.btn-add{
+  margin-left: 20px;
+}
+.tdtable{
+  width: 65%;
+}
+
+.tdtable2{
+  width: 10%;
+}
+
+.customPagination {
+  padding-left: 50%;
+  padding-right: 50%;
+}
+.sidebar[data-color="white"] .nav li a,
+.sidebar[data-color="white"] .nav li a i,
+.sidebar[data-color="white"] .nav li a[data-toggle="collapse"],
+.sidebar[data-color="white"] .nav li a[data-toggle="collapse"] i,
+.sidebar[data-color="white"] .nav li a[data-toggle="collapse"]~div>ul>li .sidebar-mini-icon,
+.sidebar[data-color="white"] .nav li a[data-toggle="collapse"]~div>ul>li>a,
+.off-canvas-sidebar[data-color="white"] .nav li a,
+.off-canvas-sidebar[data-color="white"] .nav li a i,
+.off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"],
+.off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"] i,
+.off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"]~div>ul>li .sidebar-mini-icon,
+.off-canvas-sidebar[data-color="white"] .nav li a[data-toggle="collapse"]~div>ul>li>a {
+  color: #66615B;
+  opacity: 1;
+}

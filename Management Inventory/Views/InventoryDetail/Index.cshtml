@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Management_Inventory.Models.InventoryDetailViewModel>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title"> Quản lý tài khoản</h4>
+            </div>
+            <div class="col-md-12 ml-2">
+                <a href="@Url.Action("Create", "InventoryDetail")" class="btn btn-primary ">Thêm</a>
+            </div>
+            <!-- <div class="form-group">
+                <a id="logout" href="index.html" class="btn btn-round btn-primary btn-add">Duyệt Hồ Sơ &nbsp;<i class="fas fa-user-check"></i></a>
+              </div> -->
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class=" text-primary">
+                            <tr>
+                                <th>
+                                    Mã
+                                </th>
+                                <th>
+                                    Mã kho
+                                </th>
+                                <th>
+                                    Mã sản phẩm
+                                </th>
+                                <th>
+                                    Giá tiền
+                                </th>
+                                <th>
+                                    Số lượng
+                                </th>
+                                <th>
+                                    Trạng thái
+                                </th>
+                                <th>
+
+                                </th>
+                                <th>
+
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>
+                                    @item.InventoryDetailId
+                                </td>
+                                <td>
+                                    @item.listInventory.FirstOrDefault().Name
+                                </td>
+                                <td>
+                                    @item.listProduct.FirstOrDefault().Name
+                                </td>
+                                <td>
+                                    @item.Price
+                                </td>
+                                <td>
+                                    @item.Quantity
+                                </td>
+                                <td>
+                                    @item.isActive
+                                </td>
+                                <td>
+                                    &nbsp;&nbsp;
+                                    <a href="@Url.Action("Details", "InventoryDetail", new { Id = item.InventoryDetailId.Trim() })" data-toggle="tooltip" title="Xem hồ sơ"><i class="fas fa-edit"></i></a>
+                                </td>
+                                <td>
+
+                                    &nbsp; &nbsp; &nbsp;
+                                    <a href="@Url.Action("Delete", "InventoryDetail", new { Id = item.InventoryDetailId.Trim()})" data-toggle="tooltip" title="Đến giao diện tài khoản này"><i class="fas fa-trash icon"></i></a>
+                                </td>
+
+                            </tr>
+
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="credits ml-auto">
+                    <span class="copyright">
+                        ©
+                        <script>
+                                document.write(new Date().getFullYear())
+                        </script>2019, made with <i class="fa fa-heart heart"></i> by TN
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
